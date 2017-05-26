@@ -18,7 +18,8 @@ Typical choice for the **TARGET_HOST** is your ISP gateway address.
 ```
 docker run --detach \
            --name host-ping \
+           --restart always \
            --volume /opt/host-ping/logs:/var/log/host-ping \
            --env TARGET_HOST='www.google.com' \
-           heerschop/docker-host-ping
+           heerschop/docker-host-ping           
 ```
