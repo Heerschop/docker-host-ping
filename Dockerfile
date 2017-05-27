@@ -8,6 +8,4 @@ ENV STATUS_THRESHOLD 4000
 
 ADD host-ping.exe        /usr/local/bin/
 
-#CMD [ "mono", "/usr/local/bin/host-ping.exe","${TARGET_HOST}","${PING_TIMEOUT}","${STATUS_THRESHOLD}","-l","/var/log/host-ping/host-ping.log" ]
-
 CMD mono /usr/local/bin/host-ping.exe $TARGET_HOST $PING_TIMEOUT $STATUS_THRESHOLD -l /var/log/host-ping/host-ping.log
