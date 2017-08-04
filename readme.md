@@ -16,10 +16,11 @@ Up    ,   0.01:03:05 , 2017-05-25 12:11:23 , 2017-05-25 13:14:28 , 0
 #### Docker run command
 Typical choice for the **TARGET_HOST** is your ISP gateway address.
 ```
-docker run --detach \
-           --name host-ping \
-           --restart always \
+docker run --detach                                        \
+           --name host-ping                                \
+           --restart always                                \
            --volume /opt/host-ping/logs:/var/log/host-ping \
-           --env TARGET_HOST='www.google.com' \
+           --env TARGET_HOST='www.google.com'              \
+           --env TZ=Europe/Amsterdam                       \
            heerschop/docker-host-ping
 ```
