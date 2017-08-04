@@ -6,7 +6,7 @@ ENV TARGET_HOST 127.0.0.1
 ENV PING_TIMEOUT 1000
 ENV STATUS_THRESHOLD 4000
 
-RUN apt-get update && apt-get tzdata -y
+RUN apt-get update && apt-get install  -y tzdata
 
 ADD host-ping.exe        /usr/local/bin/
 
