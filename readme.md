@@ -13,6 +13,11 @@ Down  ,   0.00:00:02 , 2017-05-25 12:11:21 , 2017-05-25 12:11:23 , 0
 Up    ,   0.01:03:05 , 2017-05-25 12:11:23 , 2017-05-25 13:14:28 , 0
 ```
 
+#### Example watch log file
+```
+watch -n 1 tail -n 10 /opt/host-ping/logs/host-ping.log
+```
+
 #### Docker run command
 Typical choice for the **TARGET_HOST** is your ISP gateway address.
 ```
